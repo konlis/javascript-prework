@@ -1,13 +1,14 @@
 var computerMove, randomNumber;
 randomNumber = Math.floor(Math.random() * 3 + 1);
 console.log('wylosowana liczba to: ' + randomNumber);
-if (randomNumber == '1') {
-  computerMove = 'kamień';
-} else if (randomNumber == '2') {
-  computerMove = 'papier';
-} else if (randomNumber == '3') {
-  computerMove = 'nozyce';
+if (playerInput == '1') {
+  playerMove = 'kamień';
+} else if (playerInput == '2') {
+  playerMove = 'papier';
+} else if (playerInput == '3') {
+  playerMove = 'nożyce';
 } else {
-  computerMove = 'nieznany ruch';
+  playerMove = 'kamień';
 }
-printMessage('Mój ruch: ' + computerMove);
+printMessage('Wykonałeś domyślny ruch, rzuć jeszcze raz.');
+printMessage('Twój ruch: ' + playerMove);
